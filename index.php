@@ -4,10 +4,9 @@
         <title>Intro page to the Computer project website</title>
         <!-- Make the page dark mode -->
         <style>
-            body {padding 25px;
+            body {
             background-color: #1b1a1a;
             color: white;
-            font-size: 25px;
             }
         </style>
 </head>
@@ -15,7 +14,7 @@
 <body>
     <!-- Show plant picture on top of page -->
     <ul>
-        <img src="Images/plant.jpg" width="1056" height="704"/></br>
+        <img src="Images/plant.jpg" width="844" height="563"/></br>
     </ul>
 
     <h1>Automatic Plant Watering and Monitoring System</h1>

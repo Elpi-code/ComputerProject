@@ -4,10 +4,9 @@
         <title> Sensor readings page</title>
         <!-- Make the page dark mode -->
         <style>
-            body {padding 25px;
+            body {
             background-color: #1b1a1a;
             color: white;
-            font-size: 25px;
             }
         </style>
     </head>
