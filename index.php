@@ -2,6 +2,14 @@
 <html>
     <head>
         <title>Intro page to the Computer project website</title>
+        <!-- Make the page dark mode -->
+        <style>
+            body {padding 25px;
+            background-color: #1b1a1a;
+            color: white;
+            font-size: 25px;
+            }
+        </style>
 </head>
 
 <body>
