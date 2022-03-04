@@ -7,7 +7,7 @@
 <body>
     <!-- Show plant picture on top of page -->
     <ul>
-        <img src="Images/plant.jpg"/></br>
+        <img src="Images/plant.jpg" width="1056" height="704"/></br>
     </ul>
 
     <h1>Automatic Plant Watering and Monitoring System</h1>
