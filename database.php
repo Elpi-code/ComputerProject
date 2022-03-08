@@ -36,9 +36,8 @@
             while($row = mysqli_fetch_assoc($result)) {
                 echo "Humidity" .$row["Humidity"]. "Level: " .$row["Level"]. "" .$row["Percentage"]. "<br>"; 
             }
-            else {
+        } else {
                 echo "0 results found";
-            }
         }
 
         //Close connection to database
