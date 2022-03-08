@@ -18,7 +18,7 @@
     </ul>
 
     <h1>Automatic Plant Watering and Monitoring System</h1>
-    <p>To see the readings from the sensors connected to the plant, click <a href="sensorreading.php"> here</a>.</br>
+    <p>To see the readings from the sensors connected to the plant, click <a href="database.php"> here</a>.</br>
         Enjoy!</br></br>
         Project created by Louis-Philippe Monette</br>
         During the Winter 2022 semester at Dawson College, in fulfillment of the final Computer Network project.</p>
