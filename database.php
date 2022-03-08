@@ -17,8 +17,8 @@
     <?php
         //Variables
         $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $username = "LP";
+        $password = "Raspberry#p1";
         $dbname = "project";
 
         //Connection to database
