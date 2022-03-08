@@ -34,7 +34,7 @@
         //Output data of each row
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
-                echo "Humidity" .$row["Humidity"]. "Level: " .$row["Level"]. .$row["Percentage"]. "<br>"; 
+                echo "Humidity" .$row["Humidity"]. "Level: " .$row["Level"]. "" .$row["Percentage"]. "<br>"; 
             }
             else {
                 echo "0 results found";
