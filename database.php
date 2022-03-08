@@ -29,11 +29,11 @@
 
         //Select the "moisture" table from the database
         $sql = "SELECT Humidity, Level, Percentage FROM moisture";
-        $result = $conn->query($sql);
+        $result = mysqli_query($conn, $sql);
 
         //Output data of each row
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
                 echo "Humidity" .$row["Humidity"]. "Level: " .$row["Level"]. .$row["Percentage"]. "<br>"; 
             }
             else {
@@ -45,6 +45,6 @@
         mysqli_close($conn);
     ?>
     <br> <p> Go back to main page <a href="index.php"> here</a>.</p>
-    
+
 </body>
 </html>
