@@ -16,9 +16,9 @@
 
     <?php
         //Variables
-        $servername = "localhost";
-        $username = "LP";
-        $password = "LP#project22";
+        $servername = "pinoupi.local";
+        $username = "pi";
+        $password = "Raspberry#p1";
         $dbname = "project";
 
         //Connection to database
