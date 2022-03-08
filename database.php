@@ -18,7 +18,7 @@
         //Variables
         $servername = "localhost";
         $username = "root";
-        $password = "LP#project22";
+        $password = "";
         $dbname = "project";
 
         //Connection to database
