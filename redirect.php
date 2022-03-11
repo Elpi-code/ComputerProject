@@ -33,8 +33,8 @@
         //Make sure there are no errors
         if(mysqli_query($conn, $sql)){
             echo "Your information was successfuly processed <br>";
-            echo "Values entered: $humidity <br>";
-            echo "Click <a href='index.php'>here</a>. to return to main page.";
+            echo "Values entered: $humidity % <br>";
+            echo "Click <a href='index.php'>here</a> to return to main page.";
         }
         else{
             echo "Error: " .$sql ."<br>" . mysqli_error($conn);
@@ -43,7 +43,6 @@
         //Close connection to database
         mysqli_close($conn);
     ?>
-    <br> <p> Go back to main page <a href="index.php"> here</a>.</p>
 
 </body>
 </html>
