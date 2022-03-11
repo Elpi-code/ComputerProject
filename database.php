@@ -21,6 +21,10 @@
         $password = "Raspberry#p1";
         $dbname = "project";
 
+        //From moisturechange.php page
+        $humidity = $_POST["humidity"];
+        $datetime = $datetime;
+
         //Connection to database
         $conn = mysqli_connect($servername, $username, $password, $dbname);
         if(!$conn){
@@ -38,6 +42,18 @@
             }
         } else {
                 echo "0 results found";
+        }
+
+        //Insert data from form in moisturechange.php page to the userchoice table in database
+        $sql = "INSERT INTO userchoice(Humidity) VALUES ('$humidity')";
+        //Make sure there are no errors
+        if(mysqli_query($conn, $sql)){
+            echo "Your information was successfuly processed" </br>;
+            echo "Values entered: $humidity"</br>;
+            echo "Click <a href='index.php'>here</a>. to return to main page.";
+        }
+        else{
+            echo "Error: " .$sql ."<br>" . mysqli_error($conn);
         }
 
         //Close connection to database
