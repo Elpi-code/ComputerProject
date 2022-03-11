@@ -16,7 +16,7 @@
            Choose below.</p></br>
 
         <!--Send humidity choice to userchoice table in database-->
-        <form action="database.php" method="post">
+        <form action="redirect.php" method="post">
             <select id="humidity" name="humidity">
                 <option value="1">Keep it as is</option>
                 <option value="10">10%</option>

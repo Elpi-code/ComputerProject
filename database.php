@@ -21,10 +21,6 @@
         $password = "Raspberry#p1";
         $dbname = "project";
 
-        //From moisturechange.php page
-        $humidity = $_POST["humidity"];
-        $dateandtime = date("Y-m-d h:i:s");
-
         //Connection to database
         $conn = mysqli_connect($servername, $username, $password, $dbname);
         if(!$conn){
@@ -45,20 +41,8 @@
         }
 
         //Invite user to consult other webpage
-        echo "To modify the humidity level of the plant, visit this page: <a href='moisturechange.php'> Moisture change</a>. <br>";
+        echo "<br><br>To modify the humidity level of the plant, visit this page: <a href='moisturechange.php'> Moisture change</a>. <br>";
 
-
-        //Insert data from form in moisturechange.php page to the userchoice table in database
-        $sql = "INSERT INTO userchoice(Time_of_request, Humidity) VALUES ('$dateandtime', '$humidity')";
-        //Make sure there are no errors
-        if(mysqli_query($conn, $sql)){
-            echo "Your information was successfuly processed <br>";
-            echo "Values entered: $humidity <br>";
-            echo "Click <a href='index.php'>here</a>. to return to main page.";
-        }
-        else{
-            echo "Error: " .$sql ."<br>" . mysqli_error($conn);
-        }
 
         //Close connection to database
         mysqli_close($conn);
