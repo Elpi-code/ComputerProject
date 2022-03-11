@@ -48,8 +48,8 @@
         $sql = "INSERT INTO userchoice(Humidity) VALUES ('$humidity')";
         //Make sure there are no errors
         if(mysqli_query($conn, $sql)){
-            echo "Your information was successfuly processed" </br>;
-            echo "Values entered: $humidity"</br>;
+            echo "Your information was successfuly processed" <br>;
+            echo "Values entered: $humidity"<br>;
             echo "Click <a href='index.php'>here</a>. to return to main page.";
         }
         else{
