@@ -34,7 +34,8 @@
         if(mysqli_query($conn, $sql)){
             echo "Your information was successfuly processed <br>";
             echo "Values entered: $humidity % <br>";
-            echo "Click <a href='index.php'>here</a> to return to main page.";
+            echo "<br> To check again the status of your plant soil, click<a href="database.php"> here</a>."
+            echo "<br>Or click <a href='index.php'>here</a> to return to main page.";
         }
         else{
             echo "Error: " .$sql ."<br>" . mysqli_error($conn);
