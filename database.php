@@ -44,6 +44,10 @@
                 echo "0 results found";
         }
 
+        //Invite user to consult other webpage
+        echo "To modify the humidity level of the plant, visit this page: <a href='moisturechange.php'> Moisture change</a>.";
+
+        
         //Insert data from form in moisturechange.php page to the userchoice table in database
         $sql = "INSERT INTO userchoice(Humidity) VALUES ('$humidity')";
         //Make sure there are no errors
