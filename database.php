@@ -48,7 +48,7 @@
 
 
         //Insert data from form in moisturechange.php page to the userchoice table in database
-        $sql = "INSERT INTO userchoice(Humidity) VALUES ('$humidity')";
+        $sql = "INSERT INTO userchoice(Time_of_request, Humidity) VALUES ('$datetime', '$humidity')";
         //Make sure there are no errors
         if(mysqli_query($conn, $sql)){
             echo "Your information was successfuly processed <br>";
