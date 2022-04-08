@@ -43,7 +43,6 @@
         //Invite user to consult other webpage
         echo "<br><br>To modify the humidity level of the plant, visit this page: <a href='moisturechange.php'> Moisture change</a>. <br>";
 
-
         //Close connection to database
         mysqli_close($conn);
     ?>
